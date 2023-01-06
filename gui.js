@@ -293,7 +293,11 @@ details summary ~ * {
                         alert(`Results:\n` + blooks.map((x) => `    ${x[1]} ${x[0]}`).join(`\n`));
                     }).catch(() => alert('There was an error encoding requests!'));
                 }).catch(() => alert('There was an error getting user data!'));
-            }
+            },
+            'Check Path': () => {
+              alert(window.location.href),
+              alert(window.location.pathname.split('/')[2])
+            },
         },
         cafe: {
             'Infinite Food': () => {
